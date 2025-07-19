@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CrookieCo.</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">
+        <a href="index.html"><img src="images/logo.png" alt="CrookieCo. Logo" /></a>
+        <span>CrookieCo.</span>
+    </div>
+    <div class="nav-icons">
+      <div class="burger" id="burger" onclick="toggleMenu()">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="slider">
+  <div class="slide active" style="background-image: url('images/slide1.png');">
+    <div class="overlay">
+      <h1>Freshly Baked Goodness, Every Day!</h1>
+      <button onclick="window.location.href='#menu'">View Menu</button>
+    </div>
+  </div>
+  <div class="slide" style="background-image: url('images/slide2.png');">
+    <div class="overlay">
+      <h1>Have Questions? We’d Love to Hear From You!</h1>
+      <button onclick="window.location.href='#contact'">Contact Us</button>
+    </div>
+  </div>
+
+  <div class="slider-nav">
+    <span class="dot active" onclick="currentSlide(0)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+  </div>
+    </div>
+
+    <section class="about-section" id="about">
+  <div class="about-image">
+    <img src="images/about.jpg" alt="About CrookieCo." />
+  </div>
+  <div class="about-text">
+    <h1>Where Cookies Meet Croissants!</h1>
+    <p>
+      At CrookieCo, we make a fun and tasty treat called the Crookie—it's part cookie, part croissant! Soft, crispy, sweet, and buttery all in one bite.
+    </p>
+    <p>
+      We started CrookieCo because we love baking and sharing good food. Each Crookie is made with care and quality ingredients. Whether it’s your first bite or your tenth, we hope it makes your day a little brighter.
+    </p>
+    <p>
+      Come enjoy something different. CrookieCo is here to make your sweet moments even better.
+    </p>
+    <button class="hatdog" onclick="window.location.href='#about'">About Us</button>
+  </div>
+</section>
+
+<section class="offer-section">
+    <img src="images/prod1.jpg" alt="Jungle Base Coffee" />
+    <img src="images/prod2.jpg" alt="Jungle Base Coffee" />
+    <img src="images/prod3.jpg" alt="Jungle Base Coffee" />
+    <img src="images/prod4.jpg" alt="Jungle Base Coffee" />
+</section>
+
+
+<section id="menu" class="menu-section">
+  <h2>Menu</h2>
+
+  <div class="menu-columns">
+    <div class="menu-column">
+      <h3>Crookies</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Single Crookie</td><td>P95</td></tr>
+          <tr><td>Box of 6 Crookies</td><td>P500</td></tr>
+          <tr><td>Chocolate Chip Crookie</td><td>P100</td></tr>
+          <tr><td>Red Velvet Crookie</td><td>P105</td></tr>
+          <tr><td>Matcha Crookie</td><td>P105</td></tr>
+          <tr><td>Ube Crookie</td><td>P110</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Cookies</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Chocolate Chip Cookie</td><td>P60</td></tr>
+          <tr><td>Oatmeal Raisin Cookie</td><td>P65</td></tr>
+          <tr><td>Double Chocolate Cookie</td><td>P70</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="menu-column">
+      <h3>Croissants</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Plain Butter Croissant</td><td>P80</td></tr>
+          <tr><td>Chocolate Croissant</td><td>P95</td></tr>
+          <tr><td>Almond Croissant</td><td>P110</td></tr>
+          <tr><td>Ham & Cheese Croissant</td><td>P120</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Refreshers</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Drink</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Iced Coffee</td><td>P120</td></tr>
+          <tr><td>Lemonade</td><td>P90</td></tr>
+          <tr><td>Iced Tea</td><td>P85</td></tr>
+          <tr><td>Hot Chocolate</td><td>P100</td></tr>
+          <tr><td>Milkshake (Chocolate/Strawberry)</td><td>P150</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+
+<section id="contact" class="contact-section">
+  <h2>Get in Touch with CrookieCo.</h2>
+  <div class="contact-content">
+    <div class="visit-us-info">
+      <h3>Location & Hours</h3>
+      <ul>
+        <li><i class="fas fa-map-marker-alt"></i> Address: San Fernando, Pampanga</li>
+        <li><i class="far fa-clock"></i> Opening Hours: Monday–Saturday, 10 AM to 7 PM; <br> Closed on Sundays</li>
+      </ul>
+
+      <h3>Contact Details</h3>
+      <ul>
+        <li><i class="fas fa-phone-alt"></i> Phone: 0917-123-4567</li>
+        <li><i class="fas fa-envelope"></i> Email: info@crookieco.com</li>
+      </ul>
+
+      <h3>Social Media</h3>
+      <ul>
+        <li><i class="fab fa-facebook"></i> Facebook: CrookieCo.</li>
+        <li><i class="fab fa-instagram"></i> Instagram: @CrookieCo.</li>
+      </ul>
+    </div>
+
+    <div class="contact-right-column">
+      <div class="contact-form-container">
+        <h3>Send Us a Message</h3>
+        <form id="contactForm" action="#" method="POST" class="contact-form">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+        <div id="confirmationMessage" class="confirmation-message"></div>
+      </div>
+
+      <div class="contact-map-container">
+        <h3>Find Us</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15413.250484501438!2d120.70932065!3d15.068499249999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396f4b6a9e1d88b%3A0x7d020d2d3e1d1f0!2sTelabastagan%2C%20San%20Fernando%2C%20Pampanga!5e0!3m2!1sen!2sph!4v1700000000000!5m2!1sen!2sph"
+          width="100%"
+          height="300"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-content">
+    <p>📍 CrookieCo., San Fernando, Pampanga</p>
+    <p>📞 0917-123-4567 | 📧 info@crookieco.com</p>
+    <p>Follow us: @CrookieCo. (Facebook & Instagram)</p>
+    <p>&copy; 2025 CrookieCo. All rights reserved.</p>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const contactForm = document.getElementById('contactForm');
+      const confirmationMessage = document.getElementById('confirmationMessage');
+
+      contactForm.addEventListener('submit', function(event) {
+        event.preventDefault(); 
+
+        if (contactForm.checkValidity()) {
+          confirmationMessage.textContent = 'Message submitted successfully!';
+          confirmationMessage.style.display = 'block'; 
+          contactForm.reset(); 
+
+         
+          setTimeout(() => {
+            confirmationMessage.style.display = 'none';
+            confirmationMessage.textContent = '';
+          }, 3000);
+        } else {
+         
+        }
+      });
+    });
+  </script>
+</body>
+</html>
